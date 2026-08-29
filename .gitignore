@@ -26,6 +26,25 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# Block Python virtual environments
+.venv/
+venv/
+ENV/
+
+# Block large raw datasets and local database files
+*.csv
+*.xlsx
+*.db
+*.duckdb
+*.sqlite
+
+# Block local software cache and system logs
+.DS_Store
+Thumbs.db
+target/
+logs/
+.dbt/
+
 # PyInstaller
 #   Usually these files are written by a python script from a template
 #   before PyInstaller builds the exe, so as to inject date/other infos into it.
