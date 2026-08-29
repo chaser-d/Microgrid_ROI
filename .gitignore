@@ -26,6 +26,22 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# dbt specific blocks
+target/
+dbt_packages/
+logs/
+profiles.yml
+
+# Data and local database engines
+*.csv
+*.xlsx
+*.parquet
+*.db
+*.duckdb
+
+# Evidence build cache
+.evidence/
+
 # Block Python virtual environments
 .venv/
 venv/
